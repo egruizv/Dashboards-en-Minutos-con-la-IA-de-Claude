@@ -1,0 +1,2 @@
+Analiza esta informacion y sugiere 6 visualizaciones clave o métricas que serían mas efectivas para un dashboard de performance de ventas. 
+Explica por qué cada uno es valioso. (Fichero adjunto datos-ventas.csv)
