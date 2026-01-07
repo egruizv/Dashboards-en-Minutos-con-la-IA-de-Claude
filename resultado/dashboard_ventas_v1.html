@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Ventas (Chart.js Local)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #0ea5e9;
+      --accent-2: #22c55e;
+      --accent-3: #f59e0b;
+      --accent-4: #ef4444;
+      --border: #1f2937;
+    }
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #475569;
+      --text: #0f172a;
+      --accent: #0284c7;
+      --accent-2: #16a34a;
+      --accent-3: #d97706;
+      --accent-4: #dc2626;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 24px; border-bottom: 1px solid var(--border); position: sticky; top:0; background: var(--bg); }
+    h1 { margin: 0 0 6px; font-size: 1.4rem; }
+    .subtitle { color: var(--muted); font-size: .95rem; }
+    .controls { display:flex; flex-wrap:wrap; gap:12px; margin-top:14px; }
+    .control { background: var(--card); border:1px solid var(--border); border-radius:10px; padding:10px 12px; display:flex; align-items:center; gap:8px; }
+    select, button { background:transparent; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; }
+    .dashboard { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; padding:16px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; }
+    .chart-wide { grid-column:1/-1; }
+    footer { color:var(--muted); border-top:1px solid var(--border); padding:12px 16px; font-size:.85rem; }
+    @media(max-width:900px){ .dashboard{ grid-template-columns:1fr; } }
+  </style>
+  <!-- Chart.js embebido -->
+  <script>
+    /* Inserta aquí el contenido minificado de Chart.js (descárgalo desde https://cdn.jsdelivr.net/npm/chart.js) */
+  </script>
+</head>
+<body class="light">
+<header>
+  <h1>Dashboard de Ventas (Local)</h1>
+  <div class="subtitle">Fuente: datos-ventas.csv · Sin dependencias externas</div>
+  <div class="controls">
+    <div class="control"><label for="regionSelect">Región:</label>

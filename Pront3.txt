@@ -1,0 +1,1 @@
+si versión con Chart.js incluido en local.
